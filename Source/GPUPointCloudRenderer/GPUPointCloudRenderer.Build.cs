@@ -25,10 +25,13 @@ namespace UnrealBuildTool.Rules
         public GPUPointCloudRenderer(ReadOnlyTargetRules Target) : base(Target)
         {
             PrivateIncludePaths.Add("GPUPointCloudRenderer/Private");
-            PublicIncludePaths.Add("GPUPointCloudRenderer/Public");
+            //PublicIncludePaths.Add("GPUPointCloudRenderer/Public");
 
-            PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI" });
+            PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI", "CustomMeshComponent" } );
             PrivateDependencyModuleNames.AddRange(new string[] { "Core", "Projects" });
+
+            PCHUsage = ModuleRules.PCHUsageMode.NoSharedPCHs;
+            PrivatePCHHeaderFile = "Public/GPUPointCloudRenderer.h";
 
         }
     }

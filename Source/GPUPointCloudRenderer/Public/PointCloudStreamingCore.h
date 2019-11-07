@@ -11,6 +11,8 @@
 
 DECLARE_STATS_GROUP(TEXT("GPUPointCloudRenderer"), STATGROUP_GPUPCR, STATCAT_Advanced);
 
+class UMaterialInstanceDynamic;
+
 class GPUPOINTCLOUDRENDERER_API FPointCloudStreamingCore
 {
 public:

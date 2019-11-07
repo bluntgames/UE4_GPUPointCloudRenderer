@@ -9,7 +9,7 @@ public class GPUPointCloudRendererEditor : ModuleRules
 
         //Type = ModuleType.Editor;
 
-        PublicIncludePaths.Add("GPUPointCloudRendererEditor/Public");
+        //PublicIncludePaths.Add("GPUPointCloudRendererEditor/Public");
         PrivateIncludePaths.Add("GPUPointCloudRendererEditor/Private");
 
         PublicDependencyModuleNames.AddRange(
@@ -21,7 +21,7 @@ public class GPUPointCloudRendererEditor : ModuleRules
                     "PropertyEditor",
                     "BlueprintGraph",
                     "GPUPointCloudRenderer",
-                    "ShaderCore",
+                    //"ShaderCore",
                     "RenderCore",
                     "CustomMeshComponent",
                     "RHI"
